@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella Beauty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bella Beauty</h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="cartButton">🛒 Carrinho (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div>
+        <h2>Realce sua beleza ✨</h2>
+        <p>Cosméticos para deixar sua rotina ainda mais especial.</p>
+        <a href="#produtos" class="button">Comprar agora</a>
+      </div>
+      <div class="hero-icon">💄</div>
+    </section>
+
+    <section id="produtos">
+      <h2>Produtos</h2>
+
+      <input
+        type="text"
+        id="search"
+        placeholder="Buscar produto..."
+      >
+
+      <div id="products" class="products"></div>
+    </section>
+  </main>
+
+  <div id="cart" class="cart">
+    <div class="cart-header">
+      <h2>Meu carrinho</h2>
+      <button id="closeCart">✕</button>
+    </div>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-footer">
+      <strong>Total: <span id="total">R$ 0,00</span></strong>
+      <button id="checkout" class="button">Finalizar compra</button>
+    </div>
+  </div>
+
+  <footer id="contato">
+    <h3>Bella Beauty</h3>
+    <p>Beleza, cuidado e autoestima em um só lugar.</p>
+    <p>📧 contato@bellabeauty.com</p>
+    <p>📱 (41) 99999-9999</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
